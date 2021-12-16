@@ -81,21 +81,26 @@ body {
 
 #category {
   line-height: 28px;
-  font-weight: 700;
-  color: hsl(98, 10%, 51%);
+  cursor: pointer;
 }
 
-#category > h4 {
-  line-height: 10px;
-}
-#select{
-  border: none;
-  height: 30px;
-  width: 250px;
-  font-size: 20px;
-  line-height: 28px;
-  font-weight: 700;
+#category > h3 {
   color: black;
+}
+
+#category > p {
+  line-height: 10px;
+  color: rgb(71, 71, 71);
+  line-height: 15px;
+}
+
+#category > h3:hover {
+  color: hsl(98, 10%, 51%);
+  font-weight: bold;
+}
+
+#category > p:hover {
+  color: hsl(98, 10%, 51%);
 }
 
 #leftPart {
