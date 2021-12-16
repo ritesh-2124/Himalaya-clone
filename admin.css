@@ -1,0 +1,129 @@
+
+
+.main_frame{
+    height: 700px;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+}
+.input{
+      height: 600px;
+      width: 30%;
+      margin: 20px;
+      padding: 10px;
+      margin-left: 40px;
+}
+.in{
+    height: 40px;
+    width: 90%;
+    margin: 20px;
+    margin-top: 8px;
+    border: 2px solid silver;
+   border-radius: 5px;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+}
+#dis,.btn{
+    margin: 20px;
+    margin-top: 10px;
+    border: 2px solid silver;
+   border-radius: 5px;
+   font-family: Arial, Helvetica, sans-serif;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.btn{
+    padding: 10px 25px;
+    margin-top: 0px;
+    color: white;
+    background-color: rgb(87, 200, 245);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+  }
+h1{
+  margin: 20px;
+    margin-top: 0px;
+    color: royalblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 45px;
+    padding-bottom: 10px;
+    border-bottom: rgb(212, 211, 211) 2px solid;
+}
+label{
+   margin: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+}
+#options{
+   width: 92%;
+   height: 40px;
+   border: 2px solid silver;
+   border-radius: 5px;
+}
+.output{
+   /* height: 600px; */
+   width: 60%;
+   margin-top: 30px;
+   margin-right: 10px;
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   grid-template-rows: repeat(4,1fr);
+   grid-gap: 20px;
+}
+.btn2{
+   background-color: tomato;
+   border-radius: 10px;
+   padding: 5px;
+   border-color: transparent;
+   cursor: pointer;
+   margin-right: 20px;
+
+} 
+
+.prod{
+   height: 400px;
+   width: 200px;
+   background-color: rgb(255, 255, 255);
+   border-radius: 10px;
+   padding: 10px;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+img{
+   height: 60%;
+   width: 100%;
+   border-radius: 10px;
+}
+.prod:hover{
+  transform: scale(1.1);
+}
+.us{
+   display: flex;
+   justify-content: space-between;
+}
+.cat{
+  text-align: right;
+  color: rgb(43, 42, 31);
+  margin-bottom: -30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  line-height: 0px;
+}
+.brandname{
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   margin-top: 20px;
+}
+.brandprice{
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      line-height: 10px;
+}
+#userbtn{
+   font-family: Arial, Helvetica, sans-serif;
+   font-style: italic;
+   font-weight: bold;
+   text-decoration: underline;
+   cursor: pointer;
+   color: rebeccapurple;
+}

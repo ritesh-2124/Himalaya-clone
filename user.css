@@ -1,10 +1,15 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
 #shipDiv{
     height: 50px;
     width: 100%;
     text-align: center;
     margin-top: -20px;
     background-color: #ff7451;
-    padding-top: 3px;    
+    padding-top: 10px;    
 }
 .free{
     font-size: 17px;
@@ -15,7 +20,7 @@
    font-family: sans-serif;
     font-size: 17px;
     line-height: 17px;
-    margin-top: 20px;
+    margin-top: 23px;
 }
 #logoDiv{
     height: 100px;
@@ -50,9 +55,10 @@ color: #70756d;
 font-weight: 100%;
 
 }
-.main-nev li a:hover{
+.main-nev li:hover{
 	border-bottom: 4px solid  #a3b49b;
     color: #a3b49b;
+    padding-bottom:35px ;
 }
 #searchlogo{
     height: 50%;
@@ -63,92 +69,134 @@ font-weight: 100%;
     margin-left: 50%;
     color: #a3b49b;
     font-size: 25px;
-    width: 100px;
+    width: 130px;
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
+
 }
-.underIcon{
+
+   .main_frame{
+       display: grid;
+       grid-template-columns: repeat(4,21%);
+      column-gap: 20px;
+       width: 65%;
+
+   }
+   .child{
+       margin: 40px;
+       margin-bottom: -20px;
+       /* margin-top: 100px; */
+       width: 90%;
+       height: 300px;
+       padding: 10px;
+       border-radius: 10px;
+   }
+   .prodimg{
+       height: 60%;
+       width: 100%;
+       border-radius: 10px;
+       cursor: pointer;
+   }
+   .btn{
+       height: 40px;
+       width: 150px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: #a3b49b;
+        background-color: white;
+        border: transparent;
+        margin-top: 40px;
+        display: flex;
+
+   }
+   .btn:hover{
+        transform: scale(1.1);
+        background-color: #a3b49b;
+        color: white;
+        cursor:pointer;
+        padding-left: 10px;
+     }
+  h2 ,h3{
+    font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+  }
+  #filter,#Namefilter{
+      padding: 0px 20px;
+      font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 45px;
+        border-radius: 10px;
+        background-color: transparent;
+        border-color: transparent;
+        cursor: pointer;
+        color: rgb(255, 254, 254);
+  }
+  .logo{
+     margin-left: 50px;
+     color: white;
+     margin-top: 15px;
+  }
+  #filter,#Namefilter{
+    color: rgb(80, 78, 78);
+    font-size: 20px;
+    font-weight: normal;
+    border: 2px white dotted;
+    background-color: white;
+    height: 30px;
+    margin-top: 15px;
+    height: 35px;      
+  }
+  #filter{
+      margin-left: 60%;
+  }
+  .brandname{
+      font-weight: normal;
+      line-height: 20px;
+      margin: -10px 0px;
+      color: #686d65;
+      cursor: pointer;
+  }
+  .brandname:hover{
+      text-decoration: underline;
+  }
+  .prodcat{
+       display: flex;
+  }
+  .catagery{
+      margin-left: 15%;
+     width: 15%;
+     height: 300px;
+  }
+  .product_head{
+      text-align: center;
+      font-size: 35px;
+      font-weight: 200;
+      margin-top: 6px;
+      margin-bottom: -10px;
+  }
+  .underIcon{
     display: flex;
     height: 30px;
-    line-height: 0px;
+    line-height: 30px;
     background-color: #f7f8fa;
     padding-left: 65px;
     font-family: Arial, Helvetica, sans-serif;
     color: #686d65;
     
 }
-#reg{
-    height: 700px;
-    width: 375px;
-    margin: auto;
-    margin-top: 80px;
+.brandprice{
+    margin-top: 10px;
+    font-weight: normal;
 }
-.titles{
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 30px;
-    font-size: 18px;
-    font-weight: 400;
-    margin-top: 0px;
-    color: #7d8678;
-    margin-top: -20px;
-}
-
-.main_title{
-line-height: 10px;
-font-family: Arial, Helvetica, sans-serif;
-margin-bottom: 25px;
-font-weight: normal;
-font-size: 25px;
-margin-top: 50px;
-color: #33335b;
-}
-#forpass{
-    line-height: 50px;
-    text-decoration: none;
-      color: #573d33;
-}
-#forpass:hover{
- border-bottom: 2px solid  #573d33; 
-}
-input{
-    width: 95%;
-    height: 38px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    padding-left: 10px;
-    margin-bottom: 30px;
-    border: 1px solid #c8cec6;
-}
-.mainbtn{
-
-    width: 100%;
-    padding: 14px;
-    margin-top: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    border: transparent;
-    color: white;
-    font-weight: bold; 
-  
-}
-
-#newreg{
-    background-color: #a3b49b;
-}
-#newreg:hover{
-      background-color: #66765f;
-}
-
-#title-name{
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(20, 20, 20);
-    text-align: center;
-    font-size: 40px;
-    font-weight: 540;
+#cart_Icon{
+    font-size: 30px;
+    margin-right: 20px;
+    margin-top: 5px;
 }
 
 #footer{
-    margin-top: -15px;
+    margin-top: 15px;
     height: 350px;
     width: 100%;
     background-color: #eef2f0;
@@ -218,6 +266,8 @@ input{
 }
 #emailinput{
     margin-top: -10px;
+    margin-bottom: 20px;
+    padding: 10px 50px;
 }
 .media{
     font-family: Arial, Helvetica, sans-serif;
@@ -262,7 +312,39 @@ i:hover{
     font-size: 13px;
     font-weight: bold; 
 }
+#more{
+    margin: 50px;
+    padding: 15px 25px;
+    margin-left: 50%;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #7d8678;
+    cursor: pointer;
+    
+}
+#Healthcat{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: rgb(41, 39, 39);
+    cursor: pointer;
+}
+#Healthcat:hover{
+    color: #7d8678 ;
+}
 
+.healthcattype{
+    line-height: 30px;
+    color: #7d8678;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+
+}
+
+.healthcattype:hover{
+    color: #a2aa9e;
+}
 
 .tooltip {
     position: relative;
@@ -286,7 +368,6 @@ i:hover{
     visibility: visible;
   }
 
-  
   .dropdown-content {
     display: none;
     position: absolute;
@@ -325,3 +406,45 @@ i:hover{
       border: transparent;
     color: #a2aa9e;
   }
+
+  .dropdown-shop{
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 500px;
+    line-height: 25px;
+    left: 0;
+    color: #70756d;
+  }
+
+  . .dropdown-shop a {
+    color: #70756d;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    display: block;
+  }
+
+
+  .dropshop:hover .dropdown-shop{
+    margin-top: 20px;
+    display: block;
+    color: #a2aa9e;
+  }
+  .dropshop:hover .dropdown-shop{
+
+    margin-top: 44px;
+    display: block;
+  }
+  .dropshopbtn{
+    font-size: 20px;
+    background-color: transparent;
+    border: transparent;
+    color: #656864;
+}
+
+.dropshopbtn:hover{
+    color: #a2aa9e;
+}
