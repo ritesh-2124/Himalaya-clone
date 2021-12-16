@@ -79,6 +79,15 @@ body {
   display: flex;
 }
 
+#category {
+  line-height: 28px;
+  font-weight: 700;
+  color: hsl(98, 10%, 51%);
+}
+
+#category > h4 {
+  line-height: 10px;
+
 #select {
   border: none;
   height: 30px;

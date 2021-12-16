@@ -60,10 +60,10 @@ function display(arr, index){
       localStorage.setItem("product" , JSON.stringify(arr));
       display(arr);
    }
-   document.querySelector("#userbtn").addEventListener("click" , function(){
-       window.location.href = "user.html"
+//    document.querySelector("#userbtn").addEventListener("click" , function(){
+//        window.location.href = "user.html"
        
-   })
+//    })
 
 
 
