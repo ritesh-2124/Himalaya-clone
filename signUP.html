@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Himalaya willness</title>
+    <link rel="icon" href="https://cdn.shopify.com/s/files/1/0399/1728/9633/files/H_Logo-01_32x32.png?v=1591028931" type="image/icon type">
     <script src="https://kit.fontawesome.com/f15c774cad.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="signUp.css">
 </head>
+<!--start div-->
     <div id="shipDiv">
        <p id="offers"><span class="free" >FREE SHIPPING </span>ON ALL ORDERS OVER $35!</p>
     </div>
@@ -15,18 +17,30 @@
          <div id="logo"><img  id="logoimg" src="https://cdn.shopify.com/s/files/1/0279/8177/4927/files/new-logo.png?height=628&pad_color=ffffff&v=1596013541&width=1200" ></div>
          <div>
             <ul class="main-nev">
-					
-
-                <li><a href="#">Shop</a></li>
+                <li><a href="user.html">Shop</a></li>
                 <li><a href="#"> About </a></li>
                 <li><a href="#">Store Locator</a></li>
             </ul>
          </div>
          <div class="iconDiv">    
         
-            <i class="fas fa-search"></i>
-            <i class="far fa-user"></i>
-            <i class="fas fa-shopping-bag"></i>
+            <div class="tooltip"> <i class="fas fa-search"></i>
+                <span class="tooltiptext">Search</span>
+              </div>
+               <!--drop down on login/signup -->
+                <div class="dropdown">
+                    <button class="dropbtn"><i class="far fa-user"></i></button>
+                    <div class="dropdown-content">
+                      <a href="signUP.html">Sign In</a>
+                      <a href="creat_account.html">Register</a>
+                      <a href="cart.html">Chekout</a>
+                    </div>
+
+              </div>
+              
+            <div class="tooltip"> <i id="cart" class="fas fa-shopping-bag"></i>
+                <span class="tooltiptext">cart</span>
+              </div>
         </div>
     </div> 
     <div class="underIcon">
@@ -34,14 +48,15 @@
             <p>. / Account </p>
             <p>. / account</p>
         </div>
+        <!--registration div-->
 <div id= "reg">
     <h2 id="title-name">Already Registered?</h2>
     <h3 class="main_title">Login</h3>
-    <label class="titles" for="name">E-mail *    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; * Required Fields</label><br>
-    <input type="text" placeholder="Enter Email">
+    <label class="titles"for="name">E-mail *    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; * Required Fields</label><br>
+    <input type="text" id="email"  placeholder="Enter Email">
 <br>
-    <label class="titles" for="name">Password *</label><br>
-    <input type="text" placeholder="Enter password">
+    <label  class="titles" for="name">Password *</label><br>
+    <input type="password" id="pass" placeholder="Enter password">
     <br>
     <button class="mainbtn" id="old">LOGIN</button>
     <br>
@@ -52,6 +67,7 @@
     <button class="mainbtn" id="new">CREAT AN ACCOUNT</button>
 </div>
 
+<!-- footer div-->
 <div id="footer">
  <div>
 <h3 class="footerdiv"> Info</h3><br>
@@ -109,3 +125,12 @@
 
 </body>
 </html>
+
+
+<!--script tag-->
+
+<script src="signUp.js">
+
+
+
+</script>

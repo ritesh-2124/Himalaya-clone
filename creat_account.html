@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Himalaya willness</title>
+    <link rel="icon" href="https://cdn.shopify.com/s/files/1/0399/1728/9633/files/H_Logo-01_32x32.png?v=1591028931" type="image/icon type">
     <script src="https://kit.fontawesome.com/f15c774cad.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="creat_acc.css">
 </head>
+<!--start  div-->
     <div id="shipDiv">
        <p id="offers"><span class="free" >FREE SHIPPING </span>ON ALL ORDERS OVER $35!</p>
     </div>
@@ -17,16 +19,30 @@
             <ul class="main-nev">
 					
 
-                <li><a href="#">Shop</a></li>
+                <li><a href="user.html">Shop</a></li>
                 <li><a href="#"> About </a></li>
                 <li><a href="#">Store Locator</a></li>
             </ul>
          </div>
          <div class="iconDiv">    
-        
-            <i class="fas fa-search"></i>
-            <i class="far fa-user"></i>
-            <i class="fas fa-shopping-bag"></i>
+            <div class="tooltip"> <i class="fas fa-search"></i>
+                <span class="tooltiptext">Search</span>
+              </div>
+              <!--dropdown-->
+                <div class="dropdown">
+                    <button class="dropbtn"><i class="far fa-user"></i></button>
+                    <div class="dropdown-content">
+                      <a href="signUP.html">Sign In</a>
+                      <a href="creat_account.html">Register</a>
+                      <a href="cart.html">Chekout</a>
+                    </div>
+
+              </div>
+              
+            <div class="tooltip"> <i id="cart" class="fas fa-shopping-bag"></i>
+                <span class="tooltiptext">cart</span>
+              </div>
+
         </div>
     </div> 
     <div class="underIcon">
@@ -34,27 +50,28 @@
             <p>. / Account </p>
             <p>. / account</p>
         </div>
+        <!--registration div-->
 <div id= "reg">
     <h2 id="title-name">Creat An Account</h2>
     <h3 class="main_title">Personal Information</h3>
-    <label class="titles" for="name">First Name *  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; * Required Fields</label><br>
-    <input type="text" placeholder="Enter Name">
+    <label class="titles"  for="name">First Name *  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; * Required Fields</label><br>
+    <input type="text" id="fname" placeholder="Enter Name">
 <br>
     <label class="titles" for="name">Last Name *</label><br>
-    <input type="text" placeholder="Enter last Name">
+    <input type="text" id="lname" placeholder="Enter last Name">
     <br>
     <label class="titles" for="E-mail">E-mail *</label><br>
-    <input type="text" placeholder="E-mail">
+    <input type="text" id="email" placeholder="E-mail">
     <br>
     <label class="titles" for="password">password *</label><br>
-    <input type="text" placeholder="password">
+    <input type="password"  id="pass" placeholder="password">
     <br>
-    <button class="mainbtn" id="old">LOGIN</button>
+    <button class="mainbtn" id="newreg">CREAT</button>
     <br>
     <a class="titles" id="forpass" href=""> Or return to store</a>
    <br>
 </div>
-
+<!--footer div-->
 <div id="footer">
  <div>
 <h3 class="footerdiv"> Info</h3><br>
@@ -112,3 +129,7 @@
 
 </body>
 </html>
+
+
+
+<script src="creat_account.js"></script>
