@@ -87,8 +87,8 @@ body {
 
 #category > h4 {
   line-height: 10px;
-
-#select {
+}
+#select{
   border: none;
   height: 30px;
   width: 250px;
