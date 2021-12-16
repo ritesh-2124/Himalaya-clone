@@ -87,6 +87,15 @@ body {
 
 #category > h4 {
   line-height: 10px;
+
+#select {
+  border: none;
+  height: 30px;
+  width: 250px;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+  color: black;
 }
 
 #leftPart {
