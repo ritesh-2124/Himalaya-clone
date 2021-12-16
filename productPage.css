@@ -79,14 +79,14 @@ body {
   display: flex;
 }
 
-#select {
-  border: none;
-  height: 30px;
-  width: 250px;
-  font-size: 20px;
+#category {
   line-height: 28px;
   font-weight: 700;
-  color: black;
+  color: hsl(98, 10%, 51%);
+}
+
+#category > h4 {
+  line-height: 10px;
 }
 
 #leftPart {

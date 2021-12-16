@@ -1,73 +1,29 @@
-var productData = [
-    {
-         img: "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-3_1024x.png?v=1591028195",
-        title: "Back to Balance Cleanse",
-        price: "$29.95"
-    },
+var productData = JSON.parse(localStorage.getItem("product")) || [];
 
-    {
-        img: "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/HimalayaBambooToothpaste-Tube_Front_1024x.png?v=1613065864",
-        title: "Bamboo & Sea Salt Whitening Antiplaque Toothpaste",
-        price: "$5.99"
-    },
-    {
-         img: "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-3_1024x.png?v=1591028195",
-        title: "Back to Balance Cleanse",
-        price: "$29.95"
-    },
+productData.map(productCard);
 
-    {
-        img: "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/HimalayaBambooToothpaste-Tube_Front_1024x.png?v=1613065864",
-        title: "Bamboo & Sea Salt Whitening Antiplaque Toothpaste",
-        price: "$5.99"
-    },
-    {
-         img: "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-3_1024x.png?v=1591028195",
-        title: "Back to Balance Cleanse",
-        price: "$29.95"
-    },
+function productCard(item) {
+    console.log(item);
 
-    {
-        img: "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/HimalayaBambooToothpaste-Tube_Front_1024x.png?v=1613065864",
-        title: "Bamboo & Sea Salt Whitening Antiplaque Toothpaste",
-        price: "$5.99"
-    },
-    {
-         img: "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-3_1024x.png?v=1591028195",
-        title: "Back to Balance Cleanse",
-        price: "$29.95"
-    },
+  var div = document.createElement("div");
+  var img = document.createElement("img");
+  img.setAttribute("src", item.disc);
 
-    {
-        img: "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/HimalayaBambooToothpaste-Tube_Front_1024x.png?v=1613065864",
-        title: "Bamboo & Sea Salt Whitening Antiplaque Toothpaste",
-        price: "$5.99"
-    }];
+  var title = document.createElement("p");
+  title.textContent = item.titleOf;
 
-    productData.map(productCard);
+  var childDiv = document.createElement("div");
+  var btn = document.createElement("button");
+  btn.textContent = "ADD TO CART";
+  var i = document.createElement("i");
+  i.setAttribute("class", "fas fa-shopping-bag");
+  btn.append(i);
 
-    function productCard (item){
-       var div = document.createElement("div");
-       var img = document.createElement("img");
-       img.setAttribute("src", item.img);
-       
-       var title = document.createElement("p");
-       title.textContent = item.title
+  var price = document.createElement("h3");
+  price.textContent = "$" + item.priceof;
 
-       var childDiv = document.createElement("div");
-       var btn = document.createElement("button");
-       btn.textContent = "ADD TO CART";
-       var i = document.createElement('i');
-       i.setAttribute("class", "fas fa-shopping-bag");
-        btn.append(i);
+  childDiv.append(btn, price);
 
-    
-       var price = document.createElement("h3");
-       price.textContent = item.price;
-
-       childDiv.append(btn, price);
-
-       div.append(img,title,childDiv);
-       document.querySelector("#product").append(div);
-       
-    }
+  div.append(img, title, childDiv);
+  document.querySelector("#product").append(div);  
+}
