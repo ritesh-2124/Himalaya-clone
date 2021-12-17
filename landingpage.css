@@ -383,16 +383,52 @@ margin-bottom: 20px;
     color:grey;
 }
 .fourthtop{
-    height: 300px;
+    height: 330px;
     width:90%;
-    background-color: rgb(209, 229, 231);
+    background-color: lavender;
     margin-left:65px;
     display:flex;
+  
+
   
 
 }
 
 .fourthtop>div{
-  background-color: rgb(97, 58, 7);
-  border:2px cornsilk;
+    background-color:lavender;
+  height:100%;
+  width:20%;
+
+
+}
+.fourthtop>div~div{
+ width:80%;
+ height:70%;
+ background-color: lavender;
+ padding-top: 1cm;
+}
+.fifth{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 220px;
+    background-color:white;
+    grid-gap: 40px;
+    margin-top: 2.5cm;
+    width:90%;
+    margin-left:2cm;
+}
+.fifth>div{
+    background-color: white;
+    border:solid 1px grey;
+    padding-left:30px;
+}
+.fifth>div>h{
+    color:rgba(0, 0, 0, 0.781);
+    font-family:Poppins, sans-serif;
+font-size:20px;
+line-height:28px;
+vertical-align:baseline;
+letter-spacing:normal;
+line-height:30px;
+
 }
