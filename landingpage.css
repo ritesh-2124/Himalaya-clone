@@ -127,7 +127,7 @@ visibility: visible;
 display: none;
 position: absolute;
 width: 150px;
-right: 110px;
+right: 7%;
 background-color: white;
 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 padding: 30px 20px 0px 30px;
@@ -167,7 +167,7 @@ display: none;
 position: absolute;
 width: 100%;
 background-color: white;
-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 height: 500px;
 line-height: 25px;
 left: 0;
@@ -275,10 +275,13 @@ a>p{
     margin-bottom: -100px;
     padding: -10px;
 }
-#mainpro:hover{
+ #mainpro:hover{
     transform: scale(1.1);
 }
-
+.productzoom:hover{
+transform: scale(1.1);
+margin-bottom: 20px;
+}
 .secondtop{
     width:100%;
     height:90px;
