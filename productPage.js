@@ -1,5 +1,5 @@
 
-var productData = JSON.parse(localStorage.getItem("product")) || [];
+var productData = JSON.parse(localStorage.getItem("product"));
 var cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 productData.map(productCard);
@@ -15,6 +15,7 @@ function productCard(item) {
   var childDiv = document.createElement("div");
   var btn = document.createElement("button");
   btn.textContent = "ADD TO CART";
+  btn.setAttribute("id" , "cartbutton")
   var i = document.createElement("i");
   i.setAttribute("class", "fas fa-shopping-bag");
   btn.append(i);
