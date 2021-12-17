@@ -432,3 +432,45 @@ letter-spacing:normal;
 line-height:30px;
 
 }
+.him{
+    width:90%;
+    height:140px;
+    background:white;
+    margin-left:70px;
+    margin-top:50px;
+    display:flex;
+}
+.him>div{
+    width:80%;
+    height:70px;
+    color:rgba(0, 0, 0, 0.863);
+    background-color:white;
+    font-size:35px;
+    font-family: Poppins,sans-serif;
+    margin-top:30px;
+}
+.him>div~div{
+    width:20%;
+    height:70px;
+    background-color: white;
+    margin-left:50px;
+}
+.sixth{
+    height:300px;
+    width:90%;
+    margin-left:70px;
+    background-color:white;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 300px;
+    grid-gap:20px;
+
+}
+.sixth>div{
+    margin:1px solid black;
+    background-color:white;
+}
+.sixth>div>img{
+    height:300px;
+    width:290px;
+}
