@@ -128,7 +128,7 @@ visibility: visible;
 display: none;
 position: absolute;
 width: 150px;
-right: 7%;
+right: 5%;
 background-color: white;
 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 padding: 30px 20px 0px 30px;
@@ -387,10 +387,8 @@ margin-bottom: 20px;
     width:90%;
     background-color: rgb(209, 229, 231);
     margin-left:65px;
-    display:grid;
-    grid-template-rows: 300px;
-    grid-template-columns: (2,20%,80%);
-    grid-gap:10px;
+    display:flex;
+  
 
 }
 
