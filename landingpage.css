@@ -206,7 +206,6 @@ color: #a2aa9e;
 #main_framein_drop{
     height: 100%;
     width: 100%;
-    border: 2px solid red;
     display: flex;
     margin-top: -85px;
 }
@@ -214,7 +213,6 @@ color: #a2aa9e;
     height: 100%;
     width: 50%;
     margin-left: 5%;
-    border: 2px solid gray;
 }
 #main_framein_drop>div~div{
     height: 80%;
@@ -223,31 +221,62 @@ color: #a2aa9e;
     margin-top: 20px;
 }
 #contener_div{
-    height: 45%;
+    height: 40%;
     width: 100%;
-    border: 2px solid red;
     display: flex;
     margin-top: -50px;
+}
+#contener_div2{
+    height: 45%;
+    width: 100%;
+    display: flex;
+    margin-top: 40px;
+}
+#contener_div2>div{
+    height: 100%;
+    width: 30%;
+    margin-left: 20px;
+
+}
+#contener_div2>div{
+    height: 100%;
+    width: 30%;
+    margin-left: 20px;
 }
 #contener_div>div{
     height: 100%;
     width: 30%;
     margin-left: 20px;
-    border: 2px solid green;
+}
+#contener_div2>div>a{
+    padding-top: 0px;
+}
+#herbalbtn2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
 }
 #contener_div>div>a{
     padding-top: 0px;
 }
 a>h2{
-    margin-top: -40px;
     margin-bottom: -10px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 20px;
 }
+#herbalbtn{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: -40px;
+}
 a>p{
     margin-bottom: -100px;
-    padding: 0px;
+    padding: -10px;
+}
+#mainpro:hover{
+    transform: scale(1.1);
 }
 
 .secondtop{
