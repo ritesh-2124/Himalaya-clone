@@ -2,33 +2,54 @@
     padding: 0px;
     margin: 0px;
    }
-   .container{
-       height:665px;
-       width:100%;
-       background-color:white;
-       margin:auto
-
-          }
  
    .bottom{
-
-    min-height: 500px;
     align-items: center;
     width: 100%;
     height: 500px;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    border: 1px solid transparent;
     background-image:url("https://cdn.shopify.com/s/files/1/0399/1728/9633/files/hero-desktop-ashwagandha_x720.jpg?v=1608662725 ");
        
    }
-   .img_name{
-    background-color: white; 
-    color:black;
-    font-size:1.5cm;
-     padding: 20px;
-      padding-left:3.5cm;
+   #img_name{
+       height: 50px;
+       margin-top: 130px;
+       width: 420px;
+       background-color: white; 
+       color:black;
+       font-size:1.5cm;
+       font-family: Poppins, sans-serif;
+        padding-bottom: 25px;
+        font-size: 50px;
+         padding-left:3.5cm;
+         opacity: 0.8;
    }
+   #discription{
+       margin-left: 170px;
+       font-size: 20px;
+       line-height: 25px;
+       margin-right: 62%;
+       margin-top: 20px;
+       font-family: Arial, Helvetica, sans-serif;
+   }
+   #shop_now{
+          margin-left: 170px;
+          margin-top: 30px;
+          height: 50px;
+          width: 170px;
+          color: white;
+          background-color: #48cab2;
+          border: none; 
+          font-family: Arial, Helvetica, sans-serif;
+          transition: .5s ease;
+   }
+   #shop_now:hover{
+       background-color: rgb(41, 37, 37);
+   }
+
 #shipDiv{
 height: 50px;
 width: 100%;
@@ -278,10 +299,12 @@ a>p{
 }
  #mainpro:hover{
     transform: scale(1.1);
+    transition: .9s ease;
 }
 .productzoom:hover{
 transform: scale(1.1);
 margin-bottom: 20px;
+transition: .9s ease;
 }
 .secondtop{
     width:100%;
@@ -291,15 +314,16 @@ margin-bottom: 20px;
     color:black;
     font-size: 1cm;
     text-align: center;
-    margin-top: 2.5cm;
+    margin-top: 1.5cm;
     font-family: Arial, Helvetica, sans-serif;
 
 }
 .secondbottom{
     height:520px;
-    width:100%;
+    width:80%;
     display:flex;
     background-color:white;
+    margin: auto;
     border: black;
     display:grid;
     grid-template-columns: repeat(3,1fr);
@@ -348,7 +372,8 @@ margin-bottom: 20px;
  }
  .thirdbottom{
      height:550px;
-     width:100%;
+     width:80%;
+     margin: auto;
      display:grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: 550px;
@@ -388,10 +413,6 @@ margin-bottom: 20px;
     background-color: lavender;
     margin-left:65px;
     display:flex;
-  
-
-  
-
 }
 
 .fourthtop>div{
@@ -591,3 +612,44 @@ i:hover{
     font-size: 13px;
     font-weight: bold; 
 }
+.image_footer{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.upper_footer{
+    position: relative;
+    width: 50%;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+  }
+  
+.upper_footer:hover .image_footer {
+    opacity: 0.3;
+    
+  }
+  .upper_footer::after{
+      background: rgba(0, 0, 0, 0.3);
+  }
+  
+  .upper_footer:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    color: rgb(15, 15, 15);
+    font-size: 40px;
+    margin-left: 130px;
+  }

@@ -49,13 +49,14 @@ document.querySelector("#promoid").addEventListener("click" , function(){
  }
 })
 
-document.querySelector("#chekout").addEventListener("click" ,  function(){
- alert("Your Order succesfully added please fill payment details thankyou !!")
- window.location.href = "sucess.html"
-})
+
 
 function delateitem(index){
   cart.splice(index,1);
   localStorage.setItem("cart" , JSON.stringify(cart));
   showdata(cart)
 }
+
+document.querySelector("#chekout").addEventListener('click', function(){
+  Swal.fire("Our First Alert", "With some body text and success icon!", "success");
+});

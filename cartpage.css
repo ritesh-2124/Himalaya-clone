@@ -410,11 +410,10 @@ i:hover{
      .text{
        display: flex;
        justify-content: space-between;
-       width: 300px;
+       width: 200px;
        height: 50px;
        margin-left: 100px;
        font-family: Arial, Helvetica, sans-serif;
-       font-weight: bold;
        
      }
      .cart{
@@ -504,8 +503,8 @@ margin-bottom: 50px;
 .brandname{
     color: #333333;
     margin-top: 25%;
-    margin-left: 10%;
-    font-size: 30px;
+    margin-left: 8%;
+    font-size: 20px;
     font-weight: normal;
 }
 .brandprice{
@@ -515,4 +514,14 @@ margin-bottom: 50px;
     margin-left: 80%;
     font-size: 25px;
     font-weight: 700;
+}
+.shoping_cart{
+    text-align: left;
+    font-family:  Poppins, sans-serif;
+    font-weight: normal;
+    margin-top: 10px;
+    font-size: 36px;
+    color: #333333;
+    padding-top: 30px;
+    border-top: 1px solid #a2aa9e;
 }
