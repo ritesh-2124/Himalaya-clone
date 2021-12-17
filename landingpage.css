@@ -51,11 +51,12 @@ margin-top: 23px;
 #logoDiv{
 height: 100px;
 display: flex;
+
 }
 #logo{
 height: 100%;
 width: 200px;
-margin-left: 60px;
+margin-left: 40px;
 }
 #logoimg{
 height: 100%;
@@ -383,7 +384,7 @@ margin-bottom: 20px;
 }
 .fourthtop{
     height: 300px;
-    width:1200px;
+    width:90%;
     background-color: rgb(209, 229, 231);
     margin-left:65px;
     display:grid;
