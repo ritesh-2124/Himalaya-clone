@@ -136,8 +136,10 @@ document.querySelector("#roots").addEventListener("click",function(){
      
      var img=document.createElement("img");
     // img.setAttribute("src",)
-     img.height="30%";
-     var div=document.createElement("div");
+     
+    img.setAttribute("src" , "https://i.shgcdn.com/f95290db-d02e-433c-9564-4766788d684c/-/format/auto/-/preview/3000x3000/-/quality/lighter/")
+     img.setAttribute("id" , "rootsimg")
+    var div=document.createElement("div");
      var h=document.createElement("h2");
       h.textContent=document.textContent="Our Roots";
      var p1=document.createElement("p");
@@ -168,8 +170,8 @@ document.querySelector("#process").addEventListener("click",function(){
 
     var div1=document.createElement("div");
     var img1=document.createElement("img");
-     img1.setAttribute("src","");
-     img1.style.height="90%";
+     img1.setAttribute("src","https://i.shgcdn.com/a802e384-7312-4d13-bda1-8859e1afaecf/-/format/auto/-/preview/3000x3000/-/quality/lighter/");
+     img1.setAttribute("class" , "processimg");
      div1.append(img1);
      var div2=document.createElement("div");
      var h1=document.createElement("h2");
@@ -207,15 +209,15 @@ p12.textContent="Himalaya’s agricultural supervisory teams visit farms quarter
 div3.append(h2,p4,p5,p6,p7,p8,p9,p10,p11,p12);
 var div4=document.createElement("div");
 var img2=document.createElement("img");
-img2.setAttribute("src","");
-img2.style.height="50%";
+img2.setAttribute("src","https://i.shgcdn.com/6fdef74e-1e57-4bd4-8f3f-617132184feb/-/format/auto/-/preview/3000x3000/-/quality/lighter/");
+img2.setAttribute("class" , "processimg" )
 div4.append(img2);
 social2.append(div3,div4);
 
 var div5=document.createElement("div");
 var img3=document.createElement("img");
-img3.style.height="80%";
-img3.setAttribute("src","");
+img3.setAttribute("src","https://i.shgcdn.com/1ccc967d-5c31-4ca5-8ceb-3a0c95177b71/-/format/auto/-/preview/3000x3000/-/quality/lighter/");
+img3.setAttribute("class" , "processimg")
 div5.append(img3);
 var div6=document.createElement("div");
 var h3=document.createElement("h2");
@@ -243,8 +245,8 @@ document.querySelector("#science").addEventListener("click",function(){
 
     var div1=document.createElement("div");
     var img1=document.createElement("img");
-    img1.setAttribute("src","");
-    img1.style.height="40%";
+    img1.setAttribute("src","https://i.shgcdn.com/a094b44f-0f48-4abf-b25b-549315cc3d98/-/format/auto/-/preview/3000x3000/-/quality/lighter/");
+img1.setAttribute("class" , "scienceimg")
     div1.append(img1);
     var div2=document.createElement("div");
     var h1=document.createElement("h2");
@@ -271,8 +273,8 @@ document.querySelector("#science").addEventListener("click",function(){
     div3.append(h2,p5,p6);
     var div4=document.createElement("div");
     var img2=document.createElement("img");
-    img2.setAttribute("src","");
-    img2.style.height="90%";
+    img2.setAttribute("src","https://i.shgcdn.com/5a1a59af-3931-4d16-bff2-004468e44137/-/format/auto/-/preview/3000x3000/-/quality/lighter/");
+    img2.setAttribute("class" , "scienceimg")
     div4.append(img2);
     social2.append(div3,div4);
 
@@ -291,8 +293,8 @@ document.querySelector("#init").addEventListener("click",function(){
      
      var div1=document.createElement("div");
      var img1=document.createElement("img");
-     img1.setAttribute("src","");
-     img1.style.height="80%";
+     img1.setAttribute("src","https://i.shgcdn.com/6288998b-545b-4de3-946e-6317b6fe72f6/-/format/auto/-/preview/3000x3000/-/quality/lighter/");
+    img1.setAttribute("class" , "initimg")
      div1.append(img1);
 
      var div2=document.createElement("div");
@@ -318,15 +320,15 @@ document.querySelector("#init").addEventListener("click",function(){
 
      var div4=document.createElement("div");
      var img2=document.createElement("img");
-     img2.setAttribute("src","");
-     img2.style.height="90%";
+     img2.setAttribute("src","https://i.shgcdn.com/68587d5b-0706-4d21-b1f1-59e35de255e8/-/format/auto/-/preview/3000x3000/-/quality/lighter/");
+    img2.setAttribute("class" , "initimg")
      div4.append(img2);
      social2.append(div3,div4);
 
      var div5=document.createElement("div");
      var img3=document.createElement("img");
-     img3.setAttribute("src","");
-     img3.style.height="40%";
+     img3.setAttribute("src","https://i.shgcdn.com/f86febe0-9c1e-466f-b189-842f750669b3/-/format/auto/-/preview/3000x3000/-/quality/lighter/");
+     img3.setAttribute("class" , "initimg")
      div5.append(img3);
 
      var div6=document.createElement("div");
@@ -353,16 +355,16 @@ document.querySelector("#init").addEventListener("click",function(){
 
      var div8=document.createElement("div");
      var img4=document.createElement("img");
-     img4.style.height="80%";
-     img4.setAttribute("src","");
+     img4.setAttribute("src","https://i.shgcdn.com/6fdef74e-1e57-4bd4-8f3f-617132184feb/-/format/auto/-/preview/3000x3000/-/quality/lighter/");
+     img4.setAttribute("class" , "initimg")
      div8.append(img4);
      social4.append(div7,div8);
 
 
      var div9=document.createElement("div");
      var img5=document.createElement("img");
-     img5.style.height="130%";
-     img5.setAttribute("src","");
+     img5.setAttribute("src","https://i.shgcdn.com/87244901-21ea-4e12-91a6-08edec634fe5/-/format/auto/-/preview/3000x3000/-/quality/lighter/");
+     img5.setAttribute("class" , "initimg")
      div9.append(img5);    
      
      var div10=document.createElement("div");
