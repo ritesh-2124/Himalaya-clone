@@ -42,8 +42,8 @@ var pay = document.querySelector("#payment")
 pay.textContent = "Subtotal:" +" "+"$"+total;
 document.querySelector("#promoid").addEventListener("click" , function(){
  var promocode =  document.querySelector("#inpcode").value;
- if(promocode == "masai30"){
-   var profit = (total*30)/100;
+ if(promocode == "new40"){
+   var profit = (total*40)/100;
    total = total - profit;
    pay.textContent= "Subtotal:" +" "+"$"+total;
  }
