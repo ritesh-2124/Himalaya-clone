@@ -93,7 +93,7 @@ body {
   line-height: 10px;
   color: rgb(107, 109, 103);
   line-height: 15px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: poppins, sans-serif;
 }
 
 #category > h3:hover {
@@ -160,10 +160,10 @@ body {
   color: #a2aa9e;
   font-family: Arial, Helvetica, sans-serif;
 }
-#cart{
+#cart {
   color: #a2aa9e;
 }
-#product > div > p:hover{
+#product > div > p:hover {
   text-decoration: underline;
   cursor: pointer;
 }
@@ -201,69 +201,143 @@ body {
 #product > div > div > button:hover {
   width: 180px;
 }
-#shipDiv{
+
+#filter,
+#filterByNum {
+  font-size: 16px;
+  border: none;
+  margin: 0 20px 0px 0px;
+  font-family: Poppins, sans-serif;
+}
+
+#first > div {
+  height: 5px;
+  width: 27px;
+  background-color: rgb(180, 179, 179);
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+#first {
+  display: flex;
+  flex-direction: column;
+  margin: 2px 5px;
+}
+
+#second > div {
+  height: 12px;
+  width: 4px;
+  background-color: white;
+  border: 1px solid black;
+  margin: 0px 1px;
+}
+
+#second {
+  display: flex;
+  margin: 2px 5px;
+}
+
+#divFilter {
+  justify-content: flex-end;
+  margin-right: 12%;
+  display: flex;
+}
+
+#img_name {
+  height: 50px;
+  margin-top: 130px;
+  width: 420px;
+  background-color: white;
+  color: black;
+  font-size: 1.5cm;
+  font-family: Poppins, sans-serif;
+  padding-bottom: 25px;
+  font-size: 50px;
+  padding-left: 3.5cm;
+  opacity: 0.8;
+}
+#discription {
+  margin-left: 170px;
+  font-size: 20px;
+  line-height: 25px;
+  margin-right: 62%;
+  margin-top: 20px;
+  font-family: poppins, sans-serif;
+}
+#shop_now {
+  margin-left: 170px;
+  margin-top: 30px;
+  height: 50px;
+  width: 170px;
+  color: white;
+  background-color: #48cab2;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.5s ease;
+}
+#shop_now:hover {
+  background-color: rgb(41, 37, 37);
+}
+
+#shipDiv {
   height: 50px;
   width: 100%;
   text-align: center;
   margin-top: -20px;
   background-color: #ff7451;
-  padding-top: 10px;    
-  }
-  .free{
+  padding-top: 10px;
+}
+.free {
   font-size: 17px;
   font-weight: 800;
-  }
-  #offers{
+}
+#offers {
   color: white;
   font-family: sans-serif;
   font-size: 17px;
   line-height: 17px;
   margin-top: 23px;
-  }
-  #logoDiv{
+}
+#logoDiv {
   height: 100px;
   display: flex;
-  
-  }
-  #logo{
+}
+#logo {
   height: 100%;
   width: 200px;
   margin-left: 40px;
-  }
-  #logoimg{
+}
+#logoimg {
   height: 100%;
   width: 100%;
-  }
-  .main-nev{
-  
+}
+.main-nev {
   float: right;
   margin-top: 35px;
-  }
-  .main-nev li{
-  
+}
+.main-nev li {
   display: inline-block;
   list-style: none;
   margin-left: 25px;
-  
-  }.main-nev li a{
-  /* padding: 40px 0; */
+}
+.main-nev li a {
+  padding: 40px 0;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   color: #70756d;
   font-weight: 100%;
-  }
-  .main-nev li:hover{
-  border-bottom: 4px solid  #a3b49b;
+}
+.main-nev li:hover {
+  border-bottom: 4px solid #a3b49b;
   color: #a3b49b;
-  padding-bottom:35px ;
-  }
-  #searchlogo{
+  padding-bottom: 35px;
+}
+#searchlogo {
   height: 50%;
   width: 30px;
-  
-  }
-  .iconDiv{
+}
+.iconDiv {
   margin-left: 50%;
   color: #a3b49b;
   font-size: 25px;
@@ -271,15 +345,13 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
-  cursor: pointer;
-  
-  }
-  .tooltip {
+}
+.tooltip {
   position: relative;
   display: inline-block;
-  }
-  
-  .tooltip .tooltiptext {
+}
+
+.tooltip .tooltiptext {
   visibility: hidden;
   background-color: rgb(44, 42, 42);
   color: #fff;
@@ -291,12 +363,12 @@ body {
   margin-left: -60px;
   position: absolute;
   z-index: 1;
-  }
-  .tooltip:hover .tooltiptext {
+}
+.tooltip:hover .tooltiptext {
   visibility: visible;
-  }
-  
-  .dropdown-content {
+}
+
+.dropdown-content {
   display: none;
   position: absolute;
   width: 150px;
@@ -306,146 +378,235 @@ body {
   padding: 30px 20px 0px 30px;
   height: 100px;
   line-height: 25px;
-  
-  }
-  
-  .dropdown-content a {
+}
+
+.dropdown-content a {
   color: #a2aa9e;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
   display: block;
-  }
-  
-  .dropdown-content a:hover {
+}
+
+.dropdown-content a:hover {
   color: #454744;
-  
-  }
-  
-  .dropdown:hover .dropdown-content {
-  
+}
+
+.dropdown:hover .dropdown-content {
   margin-top: 20px;
   display: block;
-  }
-  
-  .dropbtn{
-   font-size: 25px;
-   background-color: transparent;
-   border: transparent;
+}
+
+.dropbtn {
+  font-size: 25px;
+  background-color: transparent;
+  border: transparent;
   color: #a2aa9e;
-  }
-  
-  .dropdown-shop{
+}
+
+.dropdown-shop {
   display: none;
   position: absolute;
   width: 100%;
   background-color: white;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   height: 500px;
   line-height: 25px;
   left: 0;
   color: #70756d;
-  }
-  
-  .dropdown-shop a {
+}
+
+.dropdown-shop a {
   color: #70756d;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
   display: block;
-  }
-  
-  
-  .dropshop:hover .dropdown-shop{
-  margin-top: 0px;
+}
+
+.dropshop:hover .dropdown-shop {
+  margin-top: 20px;
   display: block;
   color: #a2aa9e;
-  }
-  .dropshopbtn{
+}
+.dropshop:hover .dropdown-shop {
+  margin-top: 25px;
+  display: block;
+}
+.dropshopbtn {
   font-size: 20px;
   background-color: transparent;
   border: transparent;
   color: #656864;
-  }
-  
-  .dropshopbtn:hover{
+}
+
+.dropshopbtn:hover {
   color: #a2aa9e;
-  }
-  #main_framein_drop{
-      height: 100%;
-      width: 100%;
-      display: flex;
-      padding: 20px;
-  }
-  #main_framein_drop>div{
-      height: 100%;
-      width: 50%;
-      margin-left: 5%;
-  }
-  #main_framein_drop>div~div{
-      height: 80%;
-      width: 30%;
-      margin-left: 50px;
-      margin-top: 20px;
-  }
-  #contener_div{
-      height: 40%;
-      width: 100%;
-      display: flex;
-  }
-  #contener_div2{
-      height: 45%;
-      width: 100%;
-      display: flex;
-      margin-top: 40px;
-  }
-  #contener_div2>div{
-      height: 100%;
-      width: 30%;
-      margin-left: 20px;
-  
-  }
-  #contener_div2>div{
-      height: 100%;
-      width: 30%;
-      margin-left: 20px;
-  }
-  #contener_div>div{
-      height: 100%;
-      width: 30%;
-      margin-left: 20px;
-  }
-  #contener_div2>div>a{
-      padding-top: 0px;
-  }
-  #herbalbtn2{
-      font-family: Arial, Helvetica, sans-serif;
-      font-weight: bold;
-      font-size: 20px;
-      margin-top: -20px;
-      margin-bottom: 30px;
-  }
-  #contener_div>div>a{
-      padding-top: 0px;
-  }
-  a>h2{
-      font-family: Arial, Helvetica, sans-serif;
-      font-weight: bold;
-      font-size: 20px;
-      margin-bottom: 20px;
-  
-  }
-  #herbalbtn{
-      font-family: Arial, Helvetica, sans-serif;
-      font-weight: bold;
-      font-size: 20px;
-      margin-bottom: 30px;
-  }
-  a>p{
-      padding: -10px;
-      margin-bottom: -20px;
-  }
-  
-   #mainpro:hover{
-      transform: scale(1.1);
-  }
+}
+#main_framein_drop {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  margin-top: -85px;
+}
+#main_framein_drop > div {
+  height: 100%;
+  width: 50%;
+  margin-left: 5%;
+}
+#main_framein_drop > div ~ div {
+  height: 80%;
+  width: 30%;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+#contener_div {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  margin-top: -50px;
+}
+#contener_div2 {
+  height: 45%;
+  width: 100%;
+  display: flex;
+  margin-top: 40px;
+}
+#contener_div2 > div {
+  height: 100%;
+  width: 30%;
+  margin-left: 20px;
+}
+#contener_div2 > div {
+  height: 100%;
+  width: 30%;
+  margin-left: 20px;
+}
+#contener_div > div {
+  height: 100%;
+  width: 30%;
+  margin-left: 20px;
+}
+#contener_div2 > div > a {
+  padding-top: 0px;
+}
+
+#footer {
+  margin-top: 30px;
+  height: 350px;
+  width: 100%;
+  background-color: #eef2f0;
+  display: grid;
+  grid-template-columns: repeat(4, 20%);
+  grid-gap: 10px;
+  justify-content: center;
+}
+#footer > div {
+  height: 300px;
+  margin-top: 40px;
+  padding: 0px 10px;
+}
+#footer > div > p {
+  margin: 0px;
+  font-family: poppins, sans-serif;
+  line-height: 35px;
+  font-size: 17px;
+  font-weight: 400;
+  margin-top: 0px;
+  color: #7d8678;
+  cursor: pointer;
+  margin-top: -20px;
+}
+.footerdiv {
+  font-family: poppins, sans-serif;
+  line-height: 35px;
+  font-size: 20px;
+  font-weight: normal;
+  margin-top: 0px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.footrtadd {
+  font-family: poppins, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  margin-top: -15px;
+  line-height: 15px;
+  cursor: pointer;
+  margin-bottom: -5px;
+  color: #777777;
+  padding-top: 10px;
+}
+.ofadd {
+  font-family: poppins, sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: -5px;
+  margin-bottom: 15px;
+  color: #a6baaf;
+}
+
+.ofadd:hover {
+  color: #66765f;
+}
+#emailquery {
+  color: #7d8678;
+  font-family: poppins, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 30px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+#emailinput {
+  font-family: poppins, sans-serif;
+  font-size: 16px;
+  margin-top: -20px;
+  margin-bottom: 15px;
+  padding: 10px 50px;
+}
+.media {
+  font-family: poppins, sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  color: black;
+  margin-top: 0px;
+}
+.social_media {
+  height: 20px;
+  width: 250px;
+  justify-content: space-between;
+  display: flex;
+  cursor: pointer;
+}
+.social_media > i {
+  color: #a6baaf;
+}
+i:hover {
+  color: rgb(32, 31, 31);
+}
+.conditions {
+  height: 150px;
+  font-size: 15px;
+  width: 100%;
+  padding-top: 20px;
+  margin: auto;
+  text-align: center;
+  background-color: #eef2f0;
+  margin-top: -15px;
+  color: #7d8678;
+}
+
+.conditionborder {
+  border: rgb(162, 162, 165) 1px solid;
+  padding: 15px;
+  margin-bottom: 20px;
+  width: 80%;
+  margin-left: 9%;
+  color: #7d8678;
+  font-family: poppins, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+}
