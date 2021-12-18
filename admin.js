@@ -10,13 +10,13 @@ function myfunction(event){
   
   
   
-     var userdeta = {
+     var users = {
    catalog : cat,
    titleOf : Title,
    disc : discription,
    priceof : price
 }
-arr.push(userdeta);
+arr.push(users);
    localStorage.setItem("product" , JSON.stringify(arr));  
    display(arr)
 }

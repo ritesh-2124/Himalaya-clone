@@ -146,7 +146,7 @@ input{
     font-size: 40px;
     font-weight: 540;
 }
-
+/*footer styling*/
 #footer{
     margin-top: -15px;
     height: 350px;
@@ -262,7 +262,7 @@ i:hover{
     font-size: 13px;
     font-weight: bold; 
 }
-
+/*footer end*/
 
 .tooltip {
     position: relative;

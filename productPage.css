@@ -86,12 +86,14 @@ body {
 
 #category > h3 {
   color: black;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #category > p {
   line-height: 10px;
-  color: rgb(71, 71, 71);
+  color: rgb(107, 109, 103);
   line-height: 15px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #category > h3:hover {
@@ -118,6 +120,9 @@ body {
 
 #rightPart > h1 {
   margin-left: 300px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  color: rgb(51, 49, 49);
 }
 
 #product {
@@ -152,6 +157,15 @@ body {
 #product > div > p {
   font-size: 18px;
   padding: 0px 10px;
+  color: #a2aa9e;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#cart{
+  color: #a2aa9e;
+}
+#product > div > p:hover{
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 #product > div > div > h3 {

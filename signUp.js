@@ -11,7 +11,7 @@ function myfunction(){
   else{
    login_data.map(function(elem){
        if(elem.email== email && elem.pass == pass){
-          window.location.href = "user.html" 
+          window.location.href = "landingpage.html" 
         } 
    })   
 
