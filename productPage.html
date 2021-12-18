@@ -10,27 +10,9 @@
 </head>
 <body>
     <div id="main">
-        <div id="offer"><span id="span"><b>FREE SHIPPING</b></span> ON ALL ORDERS OVER $35!</div>
-
-        <!-- header -->
-
-        <div id="header">
-            <div id="leftHeader">
-                <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/files/new-logo.png?height=628&pad_color=ffffff&v=1591028951&width=1200" alt="logo">
-                <h3>Shop</h3>
-                <h3>About</h3>
-                <h3>Store Locator</h3>
-            </div>
-            
-            <!-- modification needed -->
-
-            <div id="rightHeader">
-               
-
-
-            </div>
-        </div>
-
+        <!-- header start -->
+        
+        <!-- header end -->
         <div id="divider">
             <p>Home / Products</p>
         </div>
@@ -44,30 +26,52 @@
                     <p>Oral Care</p>
                     <p>Personal Care</p>
                 </div>
-                <!-- <select id="select">
-                    <option value="category"><b>Health Category</b></option>
-                    <option value="herbal">Herbal Supplements</option>
-                    <option value="health">Health Interests</option>
-                    <option value="oral">Oral Care</option>
-                    <option value="personal">Personal Care</option>
-                </select> -->
             </div>
 
             <div id="rightPart">
                 <h1>Products</h1>
 
                 <!-- for filter -->
-                <div></div>
+                <div id="divFilter">
+                    <select name="" id="filter" onchange="priceNameHandle()">
+                        <option value="nameAscen">Name Ascending</option>
+                        <option value="nameDescen">Name Descending</option>
+                        <option value="priceAscen">Price Ascending</option>
+                        <option value="priceDescen">Price Descending</option>
+                    </select>
+
+                    <select id="filterByNum" onchange="numHandle()">
+                        <option value="12">12</option>
+                        <option value="16" selected>16</option>
+                        <option value="32">32</option>
+                        <option value="all">All</option>
+                    </select>
+
+                    <div id="first">
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div id="second">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    
+                </div>
 
                 <!-- product Panel -->
                 <div id="product">
                     
                 </div>
-                <button id="btn">Show More</button>
+                <button id="btn" onclick="showMore()">Show More</button>
             </div>
         </div>
 
+        <!-- footer start -->
         <div id="footer"></div>
+
+        <!-- footer end -->
     </div>
 </body>
 </html>
