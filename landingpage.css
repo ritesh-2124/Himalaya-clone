@@ -410,13 +410,13 @@ transition: .9s ease;
 .fourthtop{
     height: 330px;
     width:90%;
-    background-color: lavender;
+    background-color: #f7f8fa;
     margin-left:65px;
     display:flex;
 }
 
 .fourthtop>div{
-    background-color:lavender;
+    background-color:#f7f8fa;
   height:100%;
   width:20%;
 
@@ -425,7 +425,7 @@ transition: .9s ease;
 .fourthtop>div~div{
  width:80%;
  height:70%;
- background-color: lavender;
+ background-color: #f7f8fa;
  padding-top: 1cm;
 }
 .fifth{

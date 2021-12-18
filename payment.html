@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAyment page</title>
+    <style>
+      .main_frame{
+          width: 50%;
+          margin: auto;
+      }
+      #logo{
+          height: 80px;
+          width: 100%;
+          margin-top: 40px;
+      }
+      #logo>img{
+          height: 100%;
+          width: 200px;
+      }
+      #path{
+    color: #85918a;
+    height: 20px;
+    width: 100%;
+    margin-top: 0;
+      }
+      #path~p{
+          margin: 0;
+          padding: 0;
+          text-align: center;
+          margin-top: 50px;
+          font-family: Arial, Helvetica, sans-serif;
+      }
+      #chekoutpay{
+          height: 100px;
+          width: 90%;
+          margin: auto;
+          border: 1px solid rgb(179, 179, 179);
+          display: flex;
+          border-radius: 10px;
+          margin-bottom: 50px;
+      }
+      .payimg{
+          height: 50px;
+        width: 200px;
+        margin-top: 25px;
+        margin-left: 20px;
+        background-color: transparent;
+        border :transparent;
+        cursor: pointer;
+
+      }
+       .payimg>img{
+          height: 100%;
+          width: 100%;
+          border-radius: 10px;
+      }
+      #line{
+          color:#a5a5a5;
+      }
+      .contect{
+          display: flex;
+          margin: auto;
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: normal;
+          width: 90%;
+      }
+      .contect>a{
+          color: #a5a5a5;
+          text-decoration: none;
+          margin-top: 20px;
+            width: 50%;
+            margin-bottom: 20px;
+      }
+      #email{
+          width: 90%;
+          border: 1px solid rgb(179, 179, 179);
+          margin: auto;
+          border-radius: 10px;
+          margin-bottom: 5px;
+          
+      }
+      #email>input{
+          border: transparent;
+          height: 50px;
+          margin-left: 20px;
+          width: 90%;
+
+      }
+      #email~p{
+          font-size: 15px;
+          font-family: Arial, Helvetica, sans-serif;
+          margin-left: 35px;
+          margin-top: 0;
+          color: rgb(116, 115, 115);
+          margin-bottom: 50px;
+      }
+      #fname{
+        width: 90%;
+          /* border: 1px solid rgb(179, 179, 179); */
+          margin: auto;
+          border-radius: 10px;
+          margin-bottom: 5px;
+          display: flex;
+          justify-content: space-between;
+      }
+      #fname>input{
+           border-radius: 5px;
+           border: 1px solid rgb(160, 160, 160);
+          height: 40px;
+          padding-left: 10px;
+          width: 47%;
+          margin-top: 20px;
+      }
+      .address{
+          margin: auto;
+          height: 45px;
+          width: 88%;
+          margin-top: 15px;
+          border: 1px solid rgb(160, 160, 160);
+          margin-left: 35px;
+          padding-left: 10px;
+          border-radius: 5px;
+      }
+      #country{
+          height: 50px;
+          margin: auto;
+          width: 32%;
+          margin-right: 10px;
+          border: 1px solid rgb(160, 160, 160);
+          border-radius: 5px;
+          color: rgb(160, 160, 160);
+      }
+      #zipdiv{
+          display: flex;
+          width: 90%;
+          margin: auto;
+          justify-content: space-between;
+          margin-top: 20px;
+      }
+      #ZIPcode{
+          height: 45px;
+          width: 32%;
+          padding-left: 10px;
+          border: 1px solid rgb(160, 160, 160);
+          border-radius: 5px;
+          color: rgb(160, 160, 160);
+      }
+      #submitbtn{
+          padding: 15px 35px;
+          border: transparent;
+          border-radius: 5px;
+          cursor: pointer;
+          margin: 50px;
+          background-color: #a3b49b;
+          margin-left: 200px;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 20px;
+      }
+      #submitbtn:hover{
+        background-color: #838f7e;
+      }
+    </style>
+</head>
+<body>
+    <div class="main_frame">
+        <div id="logo"> <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/files/new-logo.png?3166" alt=""></div>
+        <div id="path"><p>cart > information > shoping > payment</p> </div>
+        <p>Express chekout</p>
+        <div id="chekoutpay">
+          <button class="payimg"> <img src="https://www.blubolt.com/wp-content/uploads/2020/02/shop-pay.png" alt=""></button>
+          <button class="payimg"> <img src="https://images-na.ssl-images-amazon.com/images/G/01/EPSDocumentation/AmazonPay/button-amazonpay-touch-gold-sandbox-3x.jpg" alt=""></button>
+          <button class="payimg"> <img src="https://mobi-corp.ru/themes/mobi-corp/img/pays/googlepay-button.png" alt=""></button>
+        </div>
+      <p id="line">------------------------------------------------------------  OR  -------------------------------------------------</p>
+      
+        <form action="address">
+          <div class="contect"><h3  class="contect">Contect Information</h3>
+            <a href=""> Already have an account? Log in</a>
+        </div>
+        <div id="email">
+            <input type="text" placeholder="Email Or Phone Number">  
+        </div>
+         <p><input type="checkbox"> Email me with news and new offers</p>
+
+       <h3 class="contect">Shipping Address</h3>
+       <div id="fname"> <input type="text" id="first" placeholder="First Name(optional)">
+    <input  type="text" id="last" placeholder="Last Name"></div>
+    <input class="address"  id="add" type="text" placeholder="Address"><br>
+    <input class="address" id="apartment" type="text" placeholder="Appartment"><br>
+    <input class="address" id="city" type="text" placeholder="City"><br>
+     
+    <div id="zipdiv">
+    <select name="" id="country">
+                <option value="country">country/region</option>
+                <option value="USA">united state of america</option>
+
+
+    </select>
+    <select name="" id="country">
+        <option value="country">state</option>
+        <option value="USA">united state of america</option>
+</select>
+     <input id="ZIPcode" type="text" placeholder="ZIP Code">
+    </div>
+    <input class="address" type="text" placeholder="Phone number"><br>
+
+<button id="submitbtn">Continue Shopping</button>
+<hr>
+<p>Refund Policy  |  Shipping Policy</p>
+
+      </form>
+
+
+    </div>
+</body>
+</html>
+
+
+<script>
+  document.querySelector("#submitbtn").addEventListener("ckick" , myfunction)
+var  detailes = [];
+
+  function myfunction(event){
+    event.preventDefault()
+    var fname = document.querySelector("#first").value;
+    var lname = document.querySelector("#lname").value;
+    var address = document.querySelector("add").value;
+    var apart= document.querySelector("apartment").value;
+    var city = document.querySelector("city").value;
+    var country = document.querySelector("country").value;
+
+var obj = {
+    fname:fname,
+    lname :lname,
+    address: address,
+    apart: apart,
+    city: city,
+    country:country
+}
+detailes.push(obj)
+console.log(obj)
+  localStorage.setItem("address" , JSON.stringify(detailes))
+  }
+
+    document.querySelector("#submitbtn").addEventListener('click', function(){
+  Swal.fire("Our First Alert", "With some body text and success icon!", "success");
+});
+
+
+</script>

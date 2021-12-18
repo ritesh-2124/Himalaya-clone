@@ -56,7 +56,3 @@ function delateitem(index){
   localStorage.setItem("cart" , JSON.stringify(cart));
   showdata(cart)
 }
-
-document.querySelector("#chekout").addEventListener('click', function(){
-  Swal.fire("Our First Alert", "With some body text and success icon!", "success");
-});
