@@ -52,8 +52,13 @@ document.querySelector("#promoid").addEventListener("click" , function(){
 
 
 function delateitem(index){
+  var newtotel = 0;
   cart.splice(index,1);
   localStorage.setItem("cart" , JSON.stringify(cart));
+  cart.map(function (elem){
+    newtotel+=Number(elem.priceof);
+    document.querySelector("#payment").textContent=newtotel;
+  })
   showdata(cart)
 }
 

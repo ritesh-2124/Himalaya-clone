@@ -287,6 +287,8 @@ a > p {
 #mainpro:hover {
   transform: scale(1.1);
   transition: 0.9s ease;
+  margin-bottom: 30px;
+  margin-top: -20px;
 }
 .productzoom:hover {
   transform: scale(1.1);
@@ -341,6 +343,18 @@ a > p {
   padding-bottom: 40px;
   font-size: 18px;
   margin-top: 10px;
+}#cart{
+  color: #a2aa9e;
+}
+#mainprobtn{
+  height: 50px;
+  border: none;
+  font-size: 20px;
+  width: 200px;
+  color: white;
+  background-color: orangered;
+  margin: auto;
+  margin-left: 100px;
 }
 .thirdtop {
   height: 60px;
