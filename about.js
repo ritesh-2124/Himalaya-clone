@@ -86,7 +86,7 @@ document.querySelector("#service").addEventListener("click",function(){
 
      var div1=document.createElement("div");
      var img1=document.createElement("img");
-     img1.setAttribute("src","");
+     img1.setAttribute("src","https://i.shgcdn.com/4075e3a0-9129-48bd-bfe7-42fc93fe2397/-/format/auto/-/preview/3000x3000/-/quality/lighter/");
      img1.style.height="100%"
      div1.append(img1);
 
@@ -120,8 +120,8 @@ document.querySelector("#service").addEventListener("click",function(){
 
      var div4=document.createElement("div");
      var img2=document.createElement("img");
-     img2.style.height="70%";
-     img2.setAttribute("src","");
+     img2.style.height="40%";
+     img2.setAttribute("src","https://i.shgcdn.com/59ff8391-0e4c-47df-9848-556c4521753e/-/format/auto/-/preview/3000x3000/-/quality/lighter/");
      div4.append(img2);
      social2.append(div3,div4);
     });

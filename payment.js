@@ -27,7 +27,7 @@ console.log(obj)
   }
   else{
           document.querySelector("#submitbtn").addEventListener('click', function(){
-  Swal.fire("Thank You , your order paleced", "success");
+  Swal.fire("Thank You , your order placed", "success");
 });
   }
   }
