@@ -56,3 +56,7 @@ function delateitem(index){
   localStorage.setItem("cart" , JSON.stringify(cart));
   showdata(cart)
 }
+
+document.querySelector("#chekout").addEventListener("click" , function(){
+  window.location.href = "payment.html"
+})

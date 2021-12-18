@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PAyment page</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
     <style>
       .main_frame{
           width: 50%;
@@ -204,9 +205,9 @@
 </select>
      <input id="ZIPcode" type="text" placeholder="ZIP Code">
     </div>
-    <input class="address" type="text" placeholder="Phone number"><br>
+    <input class="address" type="text" id="phone" placeholder="Phone number"><br>
 
-<button id="submitbtn">Continue Shopping</button>
+<button id="submitbtn" type="submit">Place order</button>
 <hr>
 <p>Refund Policy  |  Shipping Policy</p>
 
@@ -219,34 +220,44 @@
 
 
 <script>
-  document.querySelector("#submitbtn").addEventListener("ckick" , myfunction)
-var  detailes = [];
+  document.querySelector("#submitbtn").addEventListener("click" , myfunction)
+var  detailes = JSON.parse(localStorage.getItem("address")) || [];
 
   function myfunction(event){
     event.preventDefault()
     var fname = document.querySelector("#first").value;
-    var lname = document.querySelector("#lname").value;
-    var address = document.querySelector("add").value;
-    var apart= document.querySelector("apartment").value;
-    var city = document.querySelector("city").value;
-    var country = document.querySelector("country").value;
+    var lname = document.querySelector("#last").value;
+    var address = document.querySelector("#add").value;
+    var phone= document.querySelector("#phone").value;
+    var city = document.querySelector("#city").value;
+    var country = document.querySelector("#country").value;
 
 var obj = {
     fname:fname,
     lname :lname,
     address: address,
-    apart: apart,
+    phone: phone,
     city: city,
     country:country
 }
 detailes.push(obj)
 console.log(obj)
   localStorage.setItem("address" , JSON.stringify(detailes))
+   
+  if( obj.fname == "" || obj.lname  ==  "" ||  obj.address  ==  "" || obj.phone ==  "" || obj.city  ==  "" || obj.country  ==  ""){
+       alert("fill carrect information")
   }
-
-    document.querySelector("#submitbtn").addEventListener('click', function(){
-  Swal.fire("Our First Alert", "With some body text and success icon!", "success");
+  else{
+          document.querySelector("#submitbtn").addEventListener('click', function(){
+  Swal.fire("Thank You , your order paleced", "success");
 });
+  }
+  }
+ 
+    
+
+
+  
 
 
 </script>
