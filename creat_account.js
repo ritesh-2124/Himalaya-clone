@@ -22,7 +22,7 @@ function myfunction(event){
 
  if(fname != ""  && lname !="" &&  email != "" && pass != ""){
      alert("registration succesfully please log in");
-     window.location.href = "signUp.html"
+     window.location.href = "signUP.html"
  }
  else{
      alert("fill all information !!")
