@@ -1,5 +1,5 @@
 # Himalaya-clone
-it's out first CW week
+It's our first CW week
 
 diploy link - https://himalayacwproject.netlify.app/
 
