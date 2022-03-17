@@ -10,8 +10,8 @@ we were a team of 4 members and made this project in 5 days.
 
  - Ritesh Yadav
  - Sakshi rai
- - Reetu Yadav
- - Abhishak Chaudhari 
+ - Ritu Yadav
+ - Abhishak Chaudhary 
  
  ## Tech Stacks
 
