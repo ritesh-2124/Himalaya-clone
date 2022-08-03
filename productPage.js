@@ -1,7 +1,16 @@
-var productData = JSON.parse(localStorage.getItem("product")) || [];
+import data from "./db.json" assert { type: "json" };
+// debugger;
+var product = data.data;
+localStorage.setItem("product", JSON.stringify(product));
+var productData = JSON.parse(localStorage.getItem("product")) || product;
+var cart = [];
 var cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 productData.slice(0, 16).map(productCard);
+
+document.getElementById("filter").addEventListener("click", priceNameHandle);
+document.getElementById("filterByNum").addEventListener("click", numHandle);
+document.getElementById("btn").addEventListener("click", showMore);
 
 function productCard(item) {
   var div = document.createElement("div");
@@ -14,7 +23,7 @@ function productCard(item) {
   var childDiv = document.createElement("div");
   var btn = document.createElement("button");
   btn.textContent = "ADD TO CART";
-  btn.setAttribute("id" , "cartbutton")
+  btn.setAttribute("id", "cartbutton");
   var i = document.createElement("i");
   i.setAttribute("class", "fas fa-shopping-bag");
   btn.append(i);
@@ -33,15 +42,18 @@ function productCard(item) {
 
 function addToCart(item) {
   cart.push(item);
-  var cartItem = localStorage.setItem("cart", JSON.stringify(cart));
+  alert("Item added to the Cart");
+  localStorage.setItem("cart", JSON.stringify(cart));
 }
-
-// for filter
+// for sort
 function priceNameHandle() {
   var selected = document.querySelector("#filter").value;
+  var filtered = JSON.parse(localStorage.getItem("filtered")) || productData;
+
+  let data = filtered || productData;
 
   if (selected == "nameAscen") {
-    productData.sort(function (a, b) {
+    data.sort(function (a, b) {
       if (a.titleOf.toUpperCase() > b.titleOf.toUpperCase()) return 1;
 
       if (a.titleOf.toUpperCase() < b.titleOf.toUpperCase()) return -1;
@@ -51,7 +63,7 @@ function priceNameHandle() {
   }
 
   if (selected == "nameDescen") {
-    productData.sort(function (a, b) {
+    data.sort(function (a, b) {
       if (a.titleOf.toUpperCase() > b.titleOf.toUpperCase()) return -1;
 
       if (a.titleOf.toUpperCase() < b.titleOf.toUpperCase()) return 1;
@@ -61,19 +73,19 @@ function priceNameHandle() {
   }
 
   if (selected == "priceAscen") {
-    productData.sort(function (a, b) {
+    data.sort(function (a, b) {
       return a.priceof - b.priceof;
     });
   }
 
   if (selected == "priceDescen") {
-    productData.sort(function (a, b) {
+    data.sort(function (a, b) {
       return b.priceof - a.priceof;
     });
   }
 
   document.querySelector("#product").textContent = "";
-  productData.map(productCard);
+  data.map(productCard);
 }
 
 function numHandle() {
@@ -93,7 +105,9 @@ function numHandle() {
     newArray = productData.slice(0, 32);
   }
 
-  console.log(newArray);
+  if (num == "all" || newArray.length == productData.length) {
+    document.getElementById("btn").style.display = "none";
+  }
 
   document.querySelector("#product").textContent = "";
   newArray.map(productCard);
@@ -102,4 +116,36 @@ function numHandle() {
 function showMore() {
   document.querySelector("#product").textContent = "";
   productData.map(productCard);
+}
+
+// filter
+
+document
+  .getElementById("Herbal Supplements")
+  .addEventListener("click", categoryFilter);
+
+document
+  .getElementById("Health Interests")
+  .addEventListener("click", categoryFilter);
+
+document.getElementById("Oral Care").addEventListener("click", categoryFilter);
+
+document
+  .getElementById("Personal Care")
+  .addEventListener("click", categoryFilter);
+
+function categoryFilter() {
+  var productData = JSON.parse(localStorage.getItem("product"));
+  const filteredData = productData.filter((e) => {
+    if (this.id == "Health Interests") {
+      return e.catalog == "Herbal Supplements";
+    } else {
+      return e.catalog == this.id;
+    }
+  });
+  productData = filteredData;
+  localStorage.setItem("filtered", JSON.stringify(filteredData));
+  document.querySelector("#product").textContent = "";
+  productData.map(productCard);
+  document.getElementById("btn").style.display = "none";
 }

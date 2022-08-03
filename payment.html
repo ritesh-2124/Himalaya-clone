@@ -1,69 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PAyment page</title>
-    <link rel="icon" href="https://cdn.shopify.com/s/files/1/0399/1728/9633/files/H_Logo-01_32x32.png?v=1591028931" type="image/icon type">
+    <link
+      rel="icon"
+      href="https://cdn.shopify.com/s/files/1/0399/1728/9633/files/H_Logo-01_32x32.png?v=1591028931"
+      type="image/icon type"
+    />
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
-    <link rel="stylesheet" href="payment.css">
-</head>
-<body>
+    <link rel="stylesheet" href="payment.css" />
+  </head>
+  <body>
     <div class="main_frame">
-        <div id="logo"> <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/files/new-logo.png?3166" alt=""></div>
-        <div id="path"><p>cart > information > shoping > payment</p> </div>
-        <p>Express chekout</p>
-        <div id="chekoutpay">
-          <button class="payimg"> <img src="https://www.blubolt.com/wp-content/uploads/2020/02/shop-pay.png" alt=""></button>
-          <button class="payimg"> <img src="https://images-na.ssl-images-amazon.com/images/G/01/EPSDocumentation/AmazonPay/button-amazonpay-touch-gold-sandbox-3x.jpg" alt=""></button>
-          <button class="payimg"> <img src="https://mobi-corp.ru/themes/mobi-corp/img/pays/googlepay-button.png" alt=""></button>
-        </div>
-      <p id="line">------------------------------------------------------------  OR  -------------------------------------------------</p>
-      
-        <form action="address">
-          <div class="contect"><h3  class="contect">Contect Information</h3>
-            <a href=""> Already have an account? Log in</a>
+      <div id="logo">
+        <img
+          src="https://cdn.shopify.com/s/files/1/0399/1728/9633/files/new-logo.png?3166"
+          alt=""
+        />
+      </div>
+      <div id="path"><p>Home > Products >Cart > Payment</p></div>
+      <p>Express chekout</p>
+      <div id="chekoutpay">
+        <button class="payimg">
+          <img
+            src="https://www.blubolt.com/wp-content/uploads/2020/02/shop-pay.png"
+            alt=""
+          />
+        </button>
+        <button class="payimg">
+          <img
+            src="https://images-na.ssl-images-amazon.com/images/G/01/EPSDocumentation/AmazonPay/button-amazonpay-touch-gold-sandbox-3x.jpg"
+            alt=""
+          />
+        </button>
+        <button class="payimg">
+          <img
+            src="https://mobi-corp.ru/themes/mobi-corp/img/pays/googlepay-button.png"
+            alt=""
+          />
+        </button>
+      </div>
+      <p id="line">
+        ------------------------------------------------------------ OR
+        -------------------------------------------------
+      </p>
+
+      <form action="address">
+        <div class="contect">
+          <h3 class="contect">Contect Information</h3>
+          <a href=""> Already have an account? Log in</a>
         </div>
         <div id="email">
-            <input type="text" placeholder="Email Or Phone Number">  
+          <input type="text" placeholder="Email Or Phone Number" />
         </div>
-         <p><input type="checkbox"> Email me with news and new offers</p>
+        <p><input type="checkbox" /> Email me with news and new offers</p>
 
-       <h3 class="contect">Shipping Address</h3>
-       <div id="fname"> <input type="text" id="first" placeholder="First Name(optional)">
-    <input  type="text" id="last" placeholder="Last Name"></div>
-    <input class="address"  id="add" type="text" placeholder="Address"><br>
-    <input class="address" id="apartment" type="text" placeholder="Appartment"><br>
-    <input class="address" id="city" type="text" placeholder="City"><br>
-     
-    <div id="zipdiv">
-    <select name="" id="country">
-                <option value="country">country/region</option>
-                <option value="USA">united state of america</option>
+        <h3 class="contect">Shipping Address</h3>
+        <div id="fname">
+          <input type="text" id="first" placeholder="First Name(optional)" />
+          <input type="text" id="last" placeholder="Last Name" />
+        </div>
+        <input
+          class="address"
+          id="add"
+          type="text"
+          placeholder="Address"
+        /><br />
+        <input
+          class="address"
+          id="apartment"
+          type="text"
+          placeholder="Appartment"
+        /><br />
+        <input class="address" id="city" type="text" placeholder="City" /><br />
 
+        <div id="zipdiv">
+          <select name="" id="country">
+            <option value="country">country/region</option>
+            <option value="USA">united state of america</option>
+          </select>
+          <select name="" id="country">
+            <option value="country">state</option>
+            <option value="USA">united state of america</option>
+          </select>
+          <input id="ZIPcode" type="text" placeholder="ZIP Code" />
+        </div>
+        <input
+          class="address"
+          type="text"
+          id="phone"
+          placeholder="Phone number"
+        /><br />
 
-    </select>
-    <select name="" id="country">
-        <option value="country">state</option>
-        <option value="USA">united state of america</option>
-</select>
-     <input id="ZIPcode" type="text" placeholder="ZIP Code">
-    </div>
-    <input class="address" type="text" id="phone" placeholder="Phone number"><br>
-
-<button id="submitbtn" type="submit">Place order</button>
-<hr>
-<p>Refund Policy  |  Shipping Policy</p>
-
+        <button id="submitbtn" type="submit">Place order</button>
+        <hr />
+        <p>Refund Policy | Shipping Policy</p>
       </form>
-
-
     </div>
-</body>
+  </body>
 </html>
 
-
-<script src="payment.js">
-
-</script>
+<script src="payment.js"></script>
