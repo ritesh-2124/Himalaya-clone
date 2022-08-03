@@ -42,8 +42,8 @@ var pay = document.querySelector("#payment")
 pay.textContent = "Subtotal:" +" "+"$"+total;
 document.querySelector("#promoid").addEventListener("click" , function(){
  var promocode =  document.querySelector("#inpcode").value;
- if(promocode == "masai30"){
-   var profit = (total*30)/100;
+ if(promocode == "new40"){
+   var profit = (total*40)/100;
    total = total - profit;
    pay.textContent= "Subtotal:" +" "+"$"+total;
  }
@@ -52,11 +52,16 @@ document.querySelector("#promoid").addEventListener("click" , function(){
 
 
 function delateitem(index){
+  var newtotel = 0;
   cart.splice(index,1);
   localStorage.setItem("cart" , JSON.stringify(cart));
+  cart.map(function (elem){
+    newtotel+=Number(elem.priceof);
+    document.querySelector("#payment").textContent=newtotel;
+  })
   showdata(cart)
 }
 
-document.querySelector("#chekout").addEventListener('click', function(){
-  Swal.fire("Our First Alert", "With some body text and success icon!", "success");
-});
+document.querySelector("#chekout").addEventListener("click" , function(){
+  window.location.href = "payment.html"
+})

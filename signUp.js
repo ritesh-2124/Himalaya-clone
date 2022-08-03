@@ -26,5 +26,10 @@ function new_account(){
 }
 
 document.querySelector("#cart").addEventListener("click" , function(){
-  window.location.href = "cart.html"
+  window.location.href = "cartpage.html"
+})
+
+Document.querySelector("#old").addEventListener("click" , function(){
+window.location.href="productPage.html"
+
 })
