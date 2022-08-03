@@ -21,7 +21,7 @@
             <p id="offers"><span class="free" >FREE SHIPPING </span>ON ALL ORDERS OVER $35!</p>
          </div>
          <div id="logoDiv">
-          <div id="logo"><a href="landingpage.html"><img  id="logoimg" src="https://cdn.shopify.com/s/files/1/0279/8177/4927/files/new-logo.png?height=628&pad_color=ffffff&v=1596013541&width=1200" ></a></div>
+          <div id="logo"><a href="index.html"><img  id="logoimg" src="https://cdn.shopify.com/s/files/1/0279/8177/4927/files/new-logo.png?height=628&pad_color=ffffff&v=1596013541&width=1200" ></a></div>
 
               <div>
                  <ul class="main-nev">
@@ -83,14 +83,15 @@
 
 
                         <div>
-                          <img id="mainpro" src="https://cdn.shopify.com/s/files/1/0399/1728/9633/files/HUSA_Ashwagandha_90ct_Carton_Bottle_410x.jpg?v=1603142607" alt="">
+                          <img id="mainpro" src="https://cdn.shopify.com/s/files/1/0399/1728/9633/files/HUSA_Ashwagandha_90ct_Carton_Bottle_410x.jpg?v=1603142607" alt="">\
+                          <button id="mainprobtn">Featured Product</button>
                         </div>
 
                       </div>
                       </div>
                     
                     </a></li>
-                     <li><a href="#"> About </a></li>
+                     <li><a href="about.html"> About </a></li>
                      <li><a href="#">Store Locator</a></li>
                  </ul>
               </div>
@@ -104,12 +105,12 @@
                         <div class="dropdown-content">
                           <a href="signUP.html">Sign In</a>
                           <a href="creat_account.html">Register</a>
-                          <a href="cart.html">Chekout</a>
+                          <a href="cartpage.html">Chekout</a>
                         </div>
     
                   </div>
                   
-                <div class="tooltip"> <i id="cart" class="fas fa-shopping-bag"></i>
+                <div class="tooltip"> <a href="cartpage.html"><i id="cart" class="fas fa-shopping-bag"></i></a>
                     <span class="tooltiptext">cart</span>
                   </div>
              </div>
@@ -117,7 +118,7 @@
               </div>  
      <!--header end-->   
         <div class="bottom">
-             <div id="img_name"><h >ASHWAGANDHA</h></div>
+             <div id="img_name"><span>ASHWAGANDHA</span></div>
              <p id="discription">A star performer for stress and energy in a potent, organic caplet.
             </p>
             <button id="shop_now">SHOP NOW</button>
@@ -147,7 +148,7 @@
  </div>
  <div class="thirdbottom">
    <div>
-     <img src=" https://cdn.shopify.com/s/files/1/0399/1728/9633/products/Ashwagandha_BoxBottle_30_800x.jpg?v=1591028054">
+     <img src=" https://cdn.shopify.com/s/files/1/0399/1728/9633/products/HimalayaAshwagandha30ctCarton-Bottle_front_-600x600-950dd6f_edd94945-f1dd-40b5-b41e-81f2d635daa3_1024x1024.png?v=1655738427">
      <h>Oraganic Ashwagandha</h><br><br>
      <button>
       <i class="fas fa-shopping-bag"></i>
@@ -306,7 +307,12 @@
 
 
 
+<script>
+ document.querySelector("#shop_now").addEventListener("click", function(){
+   window.location.href="productPage.html"
+ })
 
+</script>
 
 
 
