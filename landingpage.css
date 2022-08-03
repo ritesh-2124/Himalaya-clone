@@ -184,6 +184,7 @@
   line-height: 25px;
   left: 0;
   color: #70756d;
+  z-index: 10;
 }
 
 .dropdown-shop a {
