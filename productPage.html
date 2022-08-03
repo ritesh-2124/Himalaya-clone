@@ -124,11 +124,11 @@
         <div id="products">
             <div id="leftPart">
                 <div id="category">
-                    <h3>Health Category</h3>
-                    <p>Herbal Supplements</p>
-                    <p>Health Interests<p>
-                    <p>Oral Care</p>
-                    <p>Personal Care</p>
+                    <h3 >Health Category</h3>
+                    <p id="Herbal Supplements">Herbal Supplements</p>
+                    <p id="Health Interests">Health Interests<p>
+                    <p id="Oral Care">Oral Care</p>
+                    <p id="Personal Care">Personal Care</p>
                 </div>
             </div>
 
@@ -137,14 +137,14 @@
 
                 <!-- for filter -->
                 <div id="divFilter">
-                    <select name="" id="filter" onchange="priceNameHandle()">
+                    <select name="" id="filter"">
                         <option value="nameAscen">Name Ascending</option>
                         <option value="nameDescen">Name Descending</option>
                         <option value="priceAscen">Price Ascending</option>
                         <option value="priceDescen">Price Descending</option>
                     </select>
 
-                    <select id="filterByNum" onchange="numHandle()">
+                    <select id="filterByNum"">
                         <option value="12">12</option>
                         <option value="16" selected>16</option>
                         <option value="32">32</option>
@@ -168,7 +168,7 @@
                 <div id="product">
                     
                 </div>
-                <button id="btn" onclick="showMore()">Show More</button>
+                <button id="btn" ">Show More</button>
             </div>
         </div>
 
@@ -233,4 +233,4 @@
 
 
 
-<script src="productPage.js"></script>
+<script src="productPage.js" type="module"></script>
