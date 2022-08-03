@@ -25,6 +25,7 @@
   font-size: 50px;
   padding-left: 3.5cm;
   opacity: 0.8;
+
 }
 #discription {
   margin-left: 170px;
@@ -184,6 +185,7 @@
   line-height: 25px;
   left: 0;
   color: #70756d;
+  z-index: 10;
 }
 
 .dropdown-shop a {
